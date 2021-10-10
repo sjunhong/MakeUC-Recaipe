@@ -1,0 +1,22 @@
+service: recaipe
+variablesResolutionMode: 20210326
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: api
+  region: us-east-2
+  stackName: serverless-lambda-${self:provider.stage}
+  lambdaHashingVersion: 20201221
+
+custom:
+  app_secrets: ${ssm:/aws/reference/secretsmanager/app_secrets}
+
+functions:
+  api:
+    handler: ./src/app.server
+    events:
+      - httpApi: "*"
+    environment:
+      apiId: ${self:custom.app_secrets.api_id}
+      apiKey: ${self:custom.app_secrets.api_key}
