@@ -1,3 +1,7 @@
+# MakeUC - University of Cincinnati
+- Best Hack for Demystifying Food Experience - 1st
+- Best Project Using Blockchain - 2nd
+
 ## Inspiration
 In recent decades, food allergy has become an increasing concern for families. There are profound physical and psychological burdens with people experiencing food allergies. Things like attending social events and even planning for everyday meals become difficult. Many of the daily interactions involving food we take for granted affect people with severe food allergic symptoms, and it should be handled with care to make the gradual transition.
 
